@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{url_for('static', filename='styles.css')}}" rel="stylesheet">
+    <title>Random Movie Picker</title>
+    <script>
+    </script>
+</head>
+<body align="center">
+    <div class="title">🎬Movie Picker</div><br>
+    <form action="/run-code" method="post">
+        <input type="submit" value="Pick" class="pickbutton" onclick="show()">
+    </form>
+    <div class="content">
+        <h4>Watch🔽</h4>
+        <p class="result">{{result}}</p>
+    </div>
+</body>
+</html>
